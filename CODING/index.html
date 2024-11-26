@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmTech Performance</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Edge Computing vs Cloud Computing</h1>
+            <p>Learn the key differences and innovations in computing technology.</p>
+            <a href="#services" class="cta-button">Start Learning</a>
+        </div>
+    </header>
+
+    <section id="services" class="services-section">
+        <h2>Key Differences</h2>
+        <div class="comparison">
+            <div class="card">
+                <h3><a href="cloud-computing.html">»Cloud Computing«</a></h3>
+                <ul>
+                    <li>Centralized data storage</li>
+                    <li>Requires constant internet</li>
+                    <li>Higher latency</li>
+                    <li>Scalable and cost-effective</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3><a href="edge-computing.html">»Edge Computing«</a></h3>
+                <ul>
+                    <li>Decentralized processing</li>
+                    <li>Low latency, faster performance</li>
+                    <li>Works offline or with limited internet</li>
+                    <li>Ideal for real-time applications</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; wassup</p>
+    </footer>
+
+    <script>
+        // Smooth Scroll Animation for "View Services"
+        $(document).ready(function() {
+            $(".cta-button").click(function(event) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $("#services").offset().top
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>
